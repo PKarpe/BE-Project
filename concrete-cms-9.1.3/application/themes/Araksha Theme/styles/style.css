@@ -1,0 +1,277 @@
+/* Including css files into other */
+
+@import "schemes.css";
+
+/* HEADER PHP
+   HEADER  */
+header .col {
+  align-self: center;
+}
+
+/* NAVIGATION BAR  */
+nav.navheader {
+  background: #f6f943;
+  padding-bottom: 1.2em;
+}
+
+nav ul.nav li {
+  font-weight: 400;
+  text-decoration: none;
+  color: #322f2f;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+nav.navheader
+  li.nav-selected.nav-path-selected
+  a.nav-selected.nav-path-selected {
+  color: #000000;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+  border-bottom: solid;
+}
+
+nav.navheader ul.nav li a:hover {
+  padding-bottom: 0.2em;
+  border-bottom: solid;
+}
+
+nav.navheader ul {
+  gap: 6rem;
+}
+
+/* FOOTER PHP 
+  NEWSLETTER    */
+
+hr.hr {
+  border: 22px solid #322f2f;
+  width: 30%;
+}
+
+/*  ABOUT US    */
+
+section.about {
+  background: #322f2f;
+  color: #f6f943;
+}
+
+/* FOOTER */
+
+footer {
+  background: #ddaaec;
+}
+
+/* COMMON FOR ALL */
+
+* {
+  font-family: "Lexend", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+h2.h2main {
+  color: #6d1485;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  color: #322f2f;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125em;
+  letter-spacing: 0.075em;
+}
+
+/*  INPUT FIELD  */
+
+.form-control {
+  border: 2px solid #6d1485;
+  border-radius: 8px;
+}
+
+.form-control:hover {
+  border: 3px solid #6d1485;
+}
+
+.form-control:focus {
+  border-color: #ddaaec;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(109, 20, 133);
+}
+
+/* ANCHOR TAG  */
+
+a.page:visited,
+a.page:hover,
+a.page {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.page:hover {
+  text-decoration: underline;
+}
+
+/*  BUTTON   */
+
+.btn-primary {
+  font-weight: 400;
+  padding: 0.5em 1em;
+  background: #6d1485;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: auto;
+}
+
+.btn-primary:hover {
+  border: 2px solid #6d1485;
+  background: #fff;
+  color: #6d1485;
+}
+
+.btn:first-child:active,
+:not(.btn-check) + .btn:active,
+.btn-primary:focus,
+.btn-light:focus,
+.btn-secondary:focus {
+  border: 3px solid #6d1485;
+  background: #fff;
+  color: #6d1485;
+  font-weight: bold;
+}
+
+.btn:focus-visible {
+  color: #6d1485;
+  background-color: #fff;
+  border-color: #6d1485;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ddaaec;
+}
+
+.btn-secondary {
+  font-weight: 400;
+  padding: 0.5em 1em;
+  border: 2px solid #6d1485;
+  background: #fff;
+  color: #6d1485;
+  border-radius: 10px;
+  width: auto;
+}
+
+.btn-secondary:hover {
+  background: #6d1485;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+i.arrow {
+  border: solid #6d1485;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+button:hover i {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+}
+
+i.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* ACESSIBILITY MENU  */
+
+.uwy .uai#userwayAccessibilityIcon {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  top: 23px;
+}
+
+body .uwy .uai#userwayAccessibilityIcon {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  padding: 6px;
+}
+
+.uwy .uai#userwayAccessibilityIcon img:not(.check_on),
+body .uwy .uai img:not(.check_on) {
+  height: 70px;
+  width: 70px;
+}
+
+/*  MEDIA QUERIES   */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+  /*  FOOTER  */
+  .languages {
+    display: flex;
+    margin: 15px 0;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .col {
+    text-align-last: center;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+
+@media (max-width: 767.98px) {
+  /*  NEWSLETTER  */
+
+  .newsletter button {
+    margin-top: 1.1em;
+  }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+  /* NAVIGATION BAR */
+  nav.navheader ul {
+    gap: 0.25rem;
+    display: contents;
+    text-align: center;
+  }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+
+@media (min-width: 1200px) {
+  /*  INPUT FIELD */
+
+  .h1,
+  h1 {
+    font-size: 2.75rem;
+  }
+}
